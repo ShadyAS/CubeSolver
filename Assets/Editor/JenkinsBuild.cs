@@ -12,7 +12,7 @@ public class JenkinsBuild
 
         Console.WriteLine(logs);
 
-        using (StreamWriter writer = new StreamWriter("releaseNotes.txt"))
+        using (StreamWriter writer = new StreamWriter("~/Desktop/releaseNotes.txt"))
         {
             writer.Write(logs);
         }
