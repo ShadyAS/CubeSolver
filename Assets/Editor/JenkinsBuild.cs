@@ -10,6 +10,8 @@ public class JenkinsBuild
     {
         string logs = GitTool.RunCommand("log --oneline --decorate");
 
+        Console.WriteLine(logs);
+
         using (StreamWriter writer = new StreamWriter("releaseNotes.txt"))
         {
             writer.Write(logs);
